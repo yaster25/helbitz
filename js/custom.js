@@ -35,6 +35,11 @@ $(document).ready(function(){
     
     $('.js-header-phone').click(function(){
         $(this).parent('.header-phone').toggleClass('active');
+        
+        $('.sidebar').removeClass('active');     
+        $('body').removeClass('menu-open');
+        $('.js-mobile-menu').removeClass('active');
+        
         return false;
     });
     

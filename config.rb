@@ -9,7 +9,7 @@ images_dir = "img"
 javascripts_dir = "js"
 http_images_path = ".." + http_path + "/" + images_dir
 http_generated_images_path = http_images_path
-output_style = :compact
+output_style = :compressed
 relative_assets = true
 line_comments = false
 
