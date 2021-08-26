@@ -1974,11 +1974,11 @@ ul {
             vertical-align: middle;
             margin: 0px 5px 0 0;
             height: 22px;
-            line-height: 22px;
-            padding: 0 10px;
+            //line-height: 22px;
+            padding: 2px 10px 0;
             min-width: 73px;
             background: url('../img/bg-product-code.png') no-repeat center right;
-            background-size: 100% 100%;
+            background-size: 73px 22px;
             font-weight: 500;
             color: $color-white;
             text-align: right;
@@ -5343,6 +5343,15 @@ line-height: 21px;
     margin-top: 0;
 }
 
+.pagination_mobile-only{
+    display: none;
+}
+
+.title-box_nosearch{
+    text-align: right;
+    padding-right: 352px;
+}
+
 
 
 @media screen and (max-width: 1439px){
@@ -5777,6 +5786,15 @@ line-height: 21px;
             width: 100%;
             margin-bottom: 20px;
         }
+    }
+
+    .title-box_nosearch{
+        padding-right: 306px;
+    }
+
+    .checkout-steps-item:last-child.active {       
+        padding-bottom: 33px;
+        border-bottom: 1px solid rgba(26,26,26,0.2);
     }
 }
 
@@ -7216,6 +7234,18 @@ line-height: 21px;
         margin-top: 0;
         padding-bottom: 26px;
     }
+
+    .pagination_mobile-only{
+        display: block;
+    }
+    .title-box_nosearch{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .checkout-steps-item:last-child.active{
+        padding-bottom: 27px;
+    }
 }
 
 
@@ -7741,6 +7771,8 @@ line-height: 21px;
     .popup-register-finish .btn{
         width: 100%;
     }
+
+    
 }
 
 @media screen and (max-width: 575px){
